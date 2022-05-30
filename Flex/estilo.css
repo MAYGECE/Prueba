@@ -1,0 +1,10 @@
+.container {
+    background: steelblue;
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap; /* Comportamiento por defecto: nowrap */
+    }
+    .item {
+    background: grey;
+    width: 50%;
+    }
