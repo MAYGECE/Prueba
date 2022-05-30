@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="/Sitio Web/scienceproject/imagenes/Diseño sin título.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   
+    <script src="https://kit.fontawesome.com/6b4c89b0a1.js" crossorigin="anonymous"></script>
+    <title> Estudiemos Filosofía de las Ciencias</title>
+    
+
+</head>
+<body class="grid-container">
+    <header class= "header" > 
+        <div class="menu_bar"><a href="#" class="btn-menu"><img src="/Sitio Web/scienceproject/imagenes/menuhamburguesa.png" height="20px" width="20px" alt="Menú"> </a> </div><h1><img src="/Sitio Web/scienceproject/imagenes/Diseño sin título.png" height="55px" width="55px">     Filosofía de las ciencias     <img src="/Sitio Web/scienceproject/imagenes/Diseño sin título.png" height="55px" width="55px"></h1>
+ 
+ 
+    </header>
+
+
+        <nav class="header-menubar"> 
+            
+                
+           
+            <ul>
+                <li><a href="inicio.html"> <span class="fa-solid fa-flask"></span>   Inicio</a></li> 
+                <li><a href="ResúmenesdeTeóricos.html"> <span class="fa-solid fa-flask"></span>   Teóricos </a></li>
+                <li><a href="ResúmenesdePrácticos.html"> <span class="fa-solid fa-flask"></span>   Prácticos </a></li> 
+               <li><a href="QuieroParticipar.html">  <span class="fa-solid fa-flask"></span>   ¡Quiero participar!  </a></li>
+        </ul>
+        </nav>
+<main class="main">
+<div><h2> ¿Te interesa participar en esta página?</h2>
+    <p>Si te gustó el contenido, y querés aportar data, resúmenes, tips de estudio y vivencias en el final llená el siguiente formulario.</p>
+    </div>
+    <form class="centrado" action="" name="formulario" method="get">
+
+        <fieldset>
+            <legend> Un poquito de data personal</legend>
+            <label for="nombres"> Nombre </label>
+            <input size="30" type="text" name="nombres" id="nombres" maxlength="30" placeholder="Ingresá tu nombre aquí..." >
+            <br><br>
+
+            <label for="pronombres"> Pronombres </label>
+            <input size="30" type="text" name="pronombres" id="pronombres" maxlength="10" placeholder="Ingresá tu/s pronombre/s aquí...">
+            <br><br>
+
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" >
+            <br><br> <br><br>
+
+       
+         <legend>Si te quedaras varadx una semana en una isla desierta, ¿de qué filósofx te llevarías un artículo/paper?</legend>
+            <input size="30" type="text" name="filósofx" id="filósofx" maxlength="40" >
+    <br><br><br>
+        
+        <input type="submit" id="btn" name="btn" value="Enviar datos">
+
+   
+    </form>
+
+
+<p class="centrado">Gracias y vuelva prontos.</p>
+<script>
+(function(){
+
+    var formulario = document.getElementsByName('formulario')[0],   
+    elementos = formulario.elements,    
+    boton = document.getElementById('btn');   
+
+var validarNombre = function(e) {
+    if (formulario.nombres.value == 0) { 
+        alert("Porfis no te olvides del nombre.");
+        e.preventDefault();
+    }
+};
+var validarPronombre = function(e){
+    if (formulario.pronombres.value == 0){ 
+        alert("Porfis no te olvides el/los pronombre(s)");
+        e.preventDefault();
+    }
+};
+
+var validarEmail = function(e){
+    if (formulario.email.value == 0){ 
+        alert("Porfis no te olvides el email");
+        e.preventDefault();
+    }
+};
+var validarFilosofx = function(e){
+    if (formulario.filósofx.value == 0){ 
+        alert("Porfis no te olvides tu filósofx predilectx");
+        e.preventDefault();
+    }
+};
+var validar =function(e) {
+        validarNombre(e);
+        validarPronombre(e);
+        validarEmail(e);
+        validarFilosofx(e);
+    
+    }
+
+
+formulario.addEventListener("submit", validar);
+
+} ());
+</script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="/Sitio Web/scienceproject/proyectoweb/"> </script>
+</main>
+<aside class="aside">
+<h4>¿Dónde podemos encontrarnos?</h4> 
+<p class="centrado"> Siempre en Puán</p>
+<div class="centrado"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0462949606263!2d-58.448732885194374!3d-34.628270366303724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca30d099485f%3A0x152b064d30f9af94!2sFacultad%20de%20Filosof%C3%ADa%20y%20Letras%20-%20UBA!5e0!3m2!1ses-419!2sar!4v1653865226144!5m2!1ses-419!2sar" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</aside>
+<footer class="footer"> 
+    
+        <div class="centrado"><h3>  Derechos reservados a Georgina Celani </h3></div>
+</body>
+</html>
