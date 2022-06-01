@@ -150,7 +150,7 @@ form{
 @media screen and (max-width:650px) {
     .grid-container{
     grid-template: 
-    "header" 10vw
+    "header" 16vw
     "header-menubar" 0px
     "main"  auto
     "aside"
